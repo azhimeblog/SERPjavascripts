@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <style src="style.css"></style>
+    <style></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .body {
+            margin: 0px;
+            align-content: center;
+        }
+        
+        .box {
+            border: 5px;
+            box-shadow: 5px;
+        }
+        
+        .wait {
+            height: 40px;
+            width: 40px;
+            background: white;
+            border-radius: 50%;
+            border: 1px solid blue;
+            opacity: 1;
+            animation: spinner4 800ms linear infinite;
+            -webkit-animation: spinner4 800ms linear infinite;
+        }
+        
+        @keyframes spinner4 {
+            to {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        button {
+            color: #1D9AF2;
+            background-color: #292D3E;
+            border: 1px solid #1D9AF2;
+            border-radius: 4px;
+            padding: 0 15px;
+            cursor: pointer;
+            height: 32px;
+            font-size: 14px;
+            background-position: center;
+            transition: background 0.8s;
+        }
+        
+        button:active {
+            box-shadow: 0 3px 0 #00823f;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" style="text-align: center;">
+        <h1>SERP ROBOT</h1>
+
+
+        <h2>ใส่ Keywords ของคุณ</h2><input id="keywords" type="text" value="" placeholder="ใส่ Keywords"><input id="urlsite" type="text" value="" placeholder="ใส่  URL ตัวอย่าง google.co.th">
+        <button id="keycheck" onclick="keywordscheck()"> Check Keywords </button>
+
+
+        <p id="dataset"></p>
+    </div>
+
+
+    <p style="text-align: center;"> ใช้สำหรับเว็บไซต์ Homepro เท่านั้น</p>
+    <script src="serp.js">
+    </script>
+</body>
+
+</html>

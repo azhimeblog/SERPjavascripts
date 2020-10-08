@@ -1,0 +1,28 @@
+.body {
+    margin: 0px;
+    align-content: center;
+}
+
+.box {
+    border: 5px;
+    box-shadow: 5px;
+    color: aqua;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    border: 1px solid #1D9AF2;
+    opacity: 1;
+    animation: spinner4 800ms linear infinite;
+    -webkit-animation: spinner4 800ms linear infinite;
+}
+
+@keyframes spinner4 {
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
